@@ -1,0 +1,354 @@
+body {
+    // margin: 8px;
+    color: $primaryColor;
+}
+
+.ba-banner {
+    height: 100vh;
+    background: $primaryColor url("../img/bg-header.jpg") no-repeat;
+    background-size: cover;
+    // display: flex;
+    // justify-content: center;
+
+}
+
+.ba-hero {
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    &__title {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 48px;
+        font-weight: 700;
+        // margin-top: 244px;
+        text-transform: uppercase;
+        letter-spacing: 3.8px;
+        margin: 0;
+    }
+
+    &__descr {
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 400;
+        font-size: 22px;
+        margin-top: 2px;
+        letter-spacing: 5px;
+    }
+
+    &-form {
+        font-family: 'Josefin Sans', sans-serif;
+        width: 652px;
+        margin-top: 53px;
+        display: flex;
+
+        &__input {
+            font-family: "Open Sans", sans-serif;
+            font-size: 14px;
+            letter-spacing: 5px;
+            height: 60px;
+            padding: 24px 126px;
+            border: 1px solid #c1c1c1;
+            border-right: none;
+            flex-grow: 1;
+            text-align: center;
+
+        }
+
+        &__btn {
+            font-family: 'Aleo', serif;
+            display: inline-block;
+            height: 60px;
+            // line-height: 50px;
+            border: 2px solid $primaryColor;
+            background-color: $secondaryColor;
+            color: $primaryColor;
+            text-transform: uppercase;
+            text-align: center;
+
+            font-size: 14px;
+            font-weight: 400;
+            padding: 20px 34px;
+            transition: 0.4s;
+        }
+
+    }
+}
+
+.ba-hero-scroll {
+    font-family: 'Josefin Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 133px;
+}
+
+
+
+.ba-header {
+    // height: 80px;
+    background-color: $secondaryColor;
+    // display: flex;
+
+    // align-items: center;
+}
+
+.ba-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+
+    &__logo {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        // line-height: 26px;
+    }
+
+    &-list {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        text-transform: uppercase;
+
+        &__item:not(:first-child) {
+            margin-left: 42px;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $primaryColor;
+    }
+}
+
+.ba-why {
+    height: 686px;
+    background: $primaryColor url("../img/bg2.jpg") no-repeat;
+    background-size: cover;
+}
+
+.block {
+    display: flex;
+
+    &-left {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 204px;
+
+        &__title {
+            font-family: 'Aleo', serif;
+            font-size: 36px;
+            font-weight: 400;
+
+        }
+
+        &__descr {
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        &__btn {
+            width: 225px;
+            display: inline-block;
+            color: $primaryColor;
+            background-color: $secondaryColor;
+            text-transform: uppercase;
+            padding: 24px 38px;
+            text-decoration: none;
+        }
+
+    }
+
+    &-right {
+        display: flex;
+        // margin-left: 100px;
+        margin-top: 120px;
+        width: 50%;
+        flex-direction: column;
+
+        &__img1 {
+            align-self: flex-start;
+        }
+
+        &__img2 {
+            align-self: flex-end;
+        }
+
+
+    }
+
+}
+
+
+.section4 {
+    background-color: #333333;
+
+}
+
+.ba-search {
+    height: 336px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-block {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        &__img {
+            display: flex;
+            height: 100px;
+        }
+
+        &__title {
+            font-family: 'Aleo', serif;
+            font-size: 36px;
+        }
+    }
+
+}
+
+.section5 {
+    background: url("../img/bg5.jpg") no-repeat;
+    background-size: cover;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section6 {
+    background: url("../img/bg6.jpg") no-repeat;
+    background-size: cover;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.ba-rectangle {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #302a26;
+    width: 540px;
+    margin-top: 230px;
+    display: flex;
+    flex-direction: column;
+
+    &__name {
+        font-size: 20px;
+    }
+
+    &__title {
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        font-size: 16px;
+    }
+
+    &__btn {
+        font-family: 'Aleo', serif;
+        font-size: 16px;
+
+        color: $primaryColor;
+        background-color: $secondaryColor;
+        text-transform: uppercase;
+        padding: 24px 38px;
+        text-decoration: none;
+    }
+}
+
+
+.section7 {
+    background: url("../img/bg7.jpg") no-repeat;
+    background-size: cover;
+    height: 730px;
+    position: relative;
+
+    // &__title {
+    //     position: absolute;
+    //     top: 120px;
+    // }
+
+}
+
+.tourist-say {
+    display: flex;
+
+    &-block {
+        display: flex;
+        justify-content: center;
+
+        &-left {
+            width: 20%;
+        }
+
+        &-right {
+            width: 80%;
+            // background-color: tomato;
+        }
+    }
+}
+
+
+
+.ba-footer {
+    display: flex;
+    justify-content: center;
+    background-color: #232323;
+    font-family: 'Josefin Sans', sans-serif;
+
+    &-block {
+        width: 165px;
+        &__title{
+            text-transform: uppercase;
+            font-size: 24px;
+            font-weight: 700;
+            text-align: center;
+        }
+        &__descr{
+            font-size: 16px;
+            font-weight: 400;
+            text-align: center;
+
+
+        }
+        &-social {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+
+}
+
+
+// .box {
+//     background-color: #ccc;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     padding: 15px;
+//     height: 100%;
+// }
+
+// .btn {
+//     background: $primaryColor;
+//     min-width: 101px;
+//     padding: 0 1em;
+
+//     &:hover {
+//         @include buttonHover;
+//     }
+// }
