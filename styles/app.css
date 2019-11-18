@@ -13,7 +13,7 @@ body {
 
 .ba-banner {
   height: 100vh;
-  background: #fff url("../img/bg-header.jpg") no-repeat;
+  background: #a2c0cf url("../img/bg-header.jpg") no-repeat;
   background-size: cover; }
 
 .ba-hero {
