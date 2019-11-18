@@ -3,9 +3,12 @@
 
 .container {
   max-width: 1120px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 15px; }
 
 body {
+  margin: 8px;
   color: #fff; }
 
 .ba-banner {
@@ -18,8 +21,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  position: relative; }
+  justify-content: center; }
   .ba-hero__title {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 48px;
@@ -31,7 +33,8 @@ body {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
     font-size: 22px;
-    margin-top: 2px;
+    margin-top: 0px;
+    margin-bottom: 0px;
     letter-spacing: 5px; }
   .ba-hero-form {
     font-family: 'Josefin Sans', sans-serif;
@@ -59,34 +62,40 @@ body {
       text-align: center;
       font-size: 14px;
       font-weight: 400;
-      padding: 20px 34px;
+      padding: 20px;
       transition: 0.4s; }
-
-.ba-hero-scroll {
-  font-family: 'Josefin Sans', sans-serif;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  position: absolute;
-  bottom: 133px; }
+  .ba-hero-scroll {
+    font-family: 'Josefin Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 90px; }
 
 .ba-header {
   background-color: #5474fd; }
 
 .ba-menu {
+  height: 80px;
+  display: block;
   display: flex;
   justify-content: space-between;
   align-items: center; }
   .ba-menu__logo {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 24px;
-    font-weight: 700; }
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px; }
   .ba-menu-list {
     display: flex;
     justify-content: space-between;
     list-style: none;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px; }
     .ba-menu-list__item:not(:first-child) {
       margin-left: 42px; }
   .ba-menu__link {
@@ -104,7 +113,7 @@ body {
     width: 50%;
     display: flex;
     flex-direction: column;
-    margin-top: 204px; }
+    margin-top: 175px; }
     .block-left__title {
       font-family: 'Aleo', serif;
       font-size: 36px;
@@ -112,21 +121,31 @@ body {
     .block-left__descr {
       font-family: 'Josefin Sans', sans-serif;
       font-size: 16px;
-      font-weight: 400; }
+      font-weight: 400;
+      letter-spacing: 1px;
+      line-height: 1.9; }
     .block-left__btn {
+      font-family: 'Aleo', serif;
+      display: inline-block;
       width: 225px;
+      height: 60px;
       display: inline-block;
       color: #fff;
       background-color: #5474fd;
       text-transform: uppercase;
-      padding: 24px 38px;
-      text-decoration: none; }
+      padding: 24px 0;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 400;
+      transition: 0.4s; }
   .block-right {
     display: flex;
     margin-top: 120px;
     width: 50%;
     flex-direction: column; }
     .block-right__img1 {
+      margin-left: 80px;
       align-self: flex-start; }
     .block-right__img2 {
       align-self: flex-end; }
@@ -137,7 +156,7 @@ body {
 .ba-search {
   height: 336px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center; }
   .ba-search-block {
     display: flex;
@@ -168,25 +187,39 @@ body {
 .ba-rectangle {
   font-family: 'Josefin Sans', sans-serif;
   background-color: #302a26;
+  opacity: .9;
   width: 540px;
+  height: 370px;
   margin-top: 230px;
+  padding: 48px 30px;
   display: flex;
   flex-direction: column; }
   .ba-rectangle__name {
-    font-size: 20px; }
+    font-size: 20px;
+    margin: 0; }
   .ba-rectangle__title {
     font-size: 20px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    margin-top: 28px; }
   .ba-rectangle__text {
-    font-size: 16px; }
-  .ba-rectangle__btn {
-    font-family: 'Aleo', serif;
     font-size: 16px;
+    margin-top: 28px; }
+  .ba-rectangle__btn {
+    margin-top: 48px;
+    font-family: 'Aleo', serif;
+    display: inline-block;
+    width: 225px;
+    height: 60px;
+    display: inline-block;
     color: #fff;
     background-color: #5474fd;
     text-transform: uppercase;
-    padding: 24px 38px;
-    text-decoration: none; }
+    padding: 24px 0;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    transition: 0.4s; }
 
 .section7 {
   background: url("../img/bg7.jpg") no-repeat;

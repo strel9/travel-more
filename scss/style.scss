@@ -1,5 +1,5 @@
 body {
-    // margin: 8px;
+    margin: 8px;
     color: $primaryColor;
 }
 
@@ -18,7 +18,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: relative;
+    // position: relative;
 
     &__title {
         font-family: 'Josefin Sans', sans-serif;
@@ -34,7 +34,8 @@ body {
         font-family: 'Josefin Sans', sans-serif;
         font-weight: 400;
         font-size: 22px;
-        margin-top: 2px;
+        margin-top: 0px;
+        margin-bottom: 0px;
         letter-spacing: 5px;
     }
 
@@ -61,7 +62,7 @@ body {
             font-family: 'Aleo', serif;
             display: inline-block;
             height: 60px;
-            // line-height: 50px;
+
             border: 2px solid $primaryColor;
             background-color: $secondaryColor;
             color: $primaryColor;
@@ -70,44 +71,47 @@ body {
 
             font-size: 14px;
             font-weight: 400;
-            padding: 20px 34px;
+            padding: 20px;
             transition: 0.4s;
         }
 
     }
+
+    &-scroll {
+        font-family: 'Josefin Sans', sans-serif;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        // position: absolute;
+        // bottom: 133px;
+        margin-top: 90px;
+    }
 }
-
-.ba-hero-scroll {
-    font-family: 'Josefin Sans', sans-serif;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    bottom: 133px;
-}
-
-
 
 .ba-header {
-    // height: 80px;
     background-color: $secondaryColor;
-    // display: flex;
-
-    // align-items: center;
 }
 
 .ba-menu {
+    height: 80px;
+    display: block;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-
+    // &-wrap {
+    //     display: flex;
+    //     justify-content: space-between;
+    //     align-items: center;
+    // }
 
     &__logo {
         font-family: 'Josefin Sans', sans-serif;
         font-size: 24px;
         font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 2px;
         // line-height: 26px;
     }
 
@@ -116,6 +120,10 @@ body {
         justify-content: space-between;
         list-style: none;
         text-transform: uppercase;
+        padding: 0;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 1px;
 
         &__item:not(:first-child) {
             margin-left: 42px;
@@ -141,29 +149,37 @@ body {
         width: 50%;
         display: flex;
         flex-direction: column;
-        margin-top: 204px;
+        margin-top: 175px;
 
         &__title {
             font-family: 'Aleo', serif;
             font-size: 36px;
             font-weight: 400;
-
         }
 
         &__descr {
             font-family: 'Josefin Sans', sans-serif;
             font-size: 16px;
             font-weight: 400;
+            letter-spacing: 1px;
+            line-height: 1.9;
         }
 
         &__btn {
+            font-family: 'Aleo', serif;
+            display: inline-block;
             width: 225px;
+            height: 60px;
             display: inline-block;
             color: $primaryColor;
             background-color: $secondaryColor;
             text-transform: uppercase;
-            padding: 24px 38px;
+            padding: 24px 0;
+            text-align: center;
             text-decoration: none;
+            font-size: 16px;
+            font-weight: 400;
+            transition: 0.4s;
         }
 
     }
@@ -176,6 +192,7 @@ body {
         flex-direction: column;
 
         &__img1 {
+            margin-left: 80px;
             align-self: flex-start;
         }
 
@@ -191,13 +208,14 @@ body {
 
 .section4 {
     background-color: #333333;
+    // border-top: 1px solid white ;
 
 }
 
 .ba-search {
     height: 336px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 
     &-block {
@@ -239,33 +257,47 @@ body {
 .ba-rectangle {
     font-family: 'Josefin Sans', sans-serif;
     background-color: #302a26;
+    opacity: .9;
     width: 540px;
+    height: 370px;
     margin-top: 230px;
+    padding: 48px 30px;
     display: flex;
     flex-direction: column;
 
     &__name {
         font-size: 20px;
+        margin: 0;
     }
 
     &__title {
         font-size: 20px;
         text-transform: uppercase;
+        margin-top: 28px;
     }
 
     &__text {
         font-size: 16px;
+        margin-top: 28px;
     }
 
     &__btn {
+        margin-top: 48px;
         font-family: 'Aleo', serif;
-        font-size: 16px;
-
+        display: inline-block;
+        width: 225px;
+        height: 60px;
+        display: inline-block;
         color: $primaryColor;
         background-color: $secondaryColor;
         text-transform: uppercase;
-        padding: 24px 38px;
+        padding: 24px 0;
+        text-align: center;
         text-decoration: none;
+        font-size: 16px;
+        font-weight: 400;
+        transition: 0.4s;
+
     }
 }
 
@@ -311,19 +343,22 @@ body {
 
     &-block {
         width: 165px;
-        &__title{
+
+        &__title {
             text-transform: uppercase;
             font-size: 24px;
             font-weight: 700;
             text-align: center;
         }
-        &__descr{
+
+        &__descr {
             font-size: 16px;
             font-weight: 400;
             text-align: center;
 
 
         }
+
         &-social {
             display: flex;
             justify-content: space-between;
