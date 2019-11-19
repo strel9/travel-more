@@ -1,5 +1,7 @@
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
 
 .container {
   max-width: 1120px;
@@ -98,7 +100,6 @@ body {
     justify-content: space-between;
     list-style: none;
     text-transform: uppercase;
-    padding: 0;
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 1px; }
@@ -261,13 +262,11 @@ body {
         text-transform: uppercase;
         font-size: 20px;
         font-weight: 400; }
+      .tourist-say-block-right i {
+        display: block;
+        font-size: 12px;
+        color: #5474fd; }
       .tourist-say-block-right__descr {
-        margin: 0; }
-        .tourist-say-block-right__descr span {
-          display: block;
-          font-size: 12px;
-          color: #5474fd; }
-      .tourist-say-block-right__descr2 {
         margin: 0;
         text-indent: 20px; }
 
@@ -289,7 +288,14 @@ body {
       font-size: 16px;
       font-weight: 400;
       text-align: center; }
-    .ba-footer-block-social {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 52px; }
+
+.ba-social {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 52px; }
+
+.ba-social__items {
+  color: #fff; }
+
+.ba-social__items:hover {
+  color: #5474fd; }

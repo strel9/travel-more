@@ -104,12 +104,6 @@ body {
     justify-content: space-between;
     align-items: center;
 
-    // &-wrap {
-    //     display: flex;
-    //     justify-content: space-between;
-    //     align-items: center;
-    // }
-
     &__logo {
         font-family: 'Josefin Sans', sans-serif;
         font-size: 24px;
@@ -124,7 +118,7 @@ body {
         justify-content: space-between;
         list-style: none;
         text-transform: uppercase;
-        padding: 0;
+       
         font-size: 14px;
         font-weight: 400;
         letter-spacing: 1px;
@@ -363,16 +357,14 @@ body {
                 font-weight: 400;
             }
 
-            &__descr {
-                margin: 0;
-                span {
-                    display: block;
-                    font-size: 12px;
-                    color: #5474fd;
-                }
+            i {
+                display: block;
+                font-size: 12px;
+                color: #5474fd;
             }
 
-            &__descr2 {
+
+            &__descr {
                 margin: 0;
                 text-indent: 20px;
             }
@@ -416,16 +408,21 @@ body {
 
         }
 
-        &-social {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 52px;
-        }
     }
-
 
 }
 
+.ba-social {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 52px;
+}
+.ba-social__items {
+    color: $primaryColor;
+}
+.ba-social__items:hover {
+    color: #5474fd;
+}
 
 // .box {
 //     background-color: #ccc;
