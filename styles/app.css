@@ -259,9 +259,12 @@ body {
     text-align: center; }
   .tourist-say-block {
     display: flex; }
-    .tourist-say-block-left img {
-      height: 100%; }
+    .tourist-say-block-left {
+      width: 40%; }
+      .tourist-say-block-left img {
+        height: 100%; }
     .tourist-say-block-right {
+      width: 60%;
       background-color: #333333;
       font-family: 'Josefin Sans', sans-serif;
       padding: 48px 52px; }
