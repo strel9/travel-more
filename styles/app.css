@@ -10,6 +10,7 @@
   padding: 0 15px; }
 
 body {
+  font-family: 'Josefin Sans', sans-serif;
   margin: 8px;
   color: #fff; }
 
@@ -113,7 +114,7 @@ body {
 
 .ba-why {
   height: 686px;
-  background: #fff url("../img/bg2.jpg") no-repeat;
+  background: #333333 url("../img/bg2.jpg") no-repeat;
   background-size: cover; }
 
 .block {
@@ -132,12 +133,14 @@ body {
       font-size: 16px;
       font-weight: 400;
       letter-spacing: 1px;
-      line-height: 1.9; }
+      line-height: 1.9;
+      margin-bottom: 34px; }
     .block-left__btn {
       font-family: 'Aleo', serif;
       display: inline-block;
       width: 225px;
       height: 60px;
+      margin-top: 16px;
       display: inline-block;
       color: #fff;
       background-color: #5474fd;
@@ -172,6 +175,8 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center; }
+    .ba-search-block-img-wrap {
+      margin-bottom: 36px; }
     .ba-search-block__img {
       display: flex;
       height: 100px; }
@@ -202,7 +207,7 @@ body {
   background-color: #232323;
   opacity: 0.902;
   height: 62%;
-  width: 46%;
+  width: 48%;
   margin-top: 230px;
   padding: 48px 30px;
   display: flex;
@@ -221,7 +226,7 @@ body {
     margin-top: 48px;
     font-family: 'Aleo', serif;
     display: inline-block;
-    width: 225px;
+    width: 14.06rem;
     height: 60px;
     display: inline-block;
     color: #fff;
@@ -259,14 +264,14 @@ body {
     .tourist-say-block-right {
       background-color: #333333;
       font-family: 'Josefin Sans', sans-serif;
-      padding: 48px 56px; }
+      padding: 48px 52px; }
       .tourist-say-block-right__title {
         text-transform: uppercase;
         font-size: 20px;
         font-weight: 400; }
       .tourist-say-block-right i {
         display: block;
-        font-size: 12px;
+        font-size: 24px;
         color: #5474fd; }
       .tourist-say-block-right__descr {
         margin: 0;
