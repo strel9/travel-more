@@ -48,7 +48,7 @@ body {
             font-size: 14px;
             letter-spacing: 5px;
             height: 60px;
-            width: 80%;
+            width: 75%;
             padding: 24px 0;
             border: 1px solid #c1c1c1;
             border-right: none;
@@ -62,7 +62,7 @@ body {
             align-items: center;
             font-family: 'Aleo', serif;
             height: 60px;
-            width: 30%;
+            width: 25%;
             border: 2px solid $primaryColor;
             background-color: $secondaryColor;
             color: $primaryColor;
@@ -398,8 +398,10 @@ body {
 
     &-block {
         width: 165px;
+        margin-top: 118px;
 
         &__title {
+            margin-top: 0;
             text-transform: uppercase;
             font-size: 24px;
             font-weight: 700;
@@ -417,6 +419,7 @@ body {
         &-social {
             display: flex;
             justify-content: space-between;
+            margin-bottom: 52px;
         }
     }
 
