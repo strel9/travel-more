@@ -75,11 +75,19 @@ body {
         margin-right: 14px; }
   .ba-hero-scroll {
     font-family: 'Josefin Sans', sans-serif;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
     margin-top: 7.5rem; }
+    .ba-hero-scroll a {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      color: #fff; }
+      .ba-hero-scroll a img {
+        margin-top: 10px; }
 
 .ba-header {
   background-color: #5474fd; }
@@ -236,8 +244,7 @@ body {
     text-align: center;
     text-decoration: none;
     font-size: 16px;
-    font-weight: 400;
-    transition: 0.4s; }
+    font-weight: 400; }
 
 .section7 {
   background: url("../img/bg7.jpg") no-repeat;
