@@ -89,7 +89,7 @@ body {
         align-items: center;
         // position: absolute;
         // bottom: 133px;
-        margin-top: 90px;
+        margin-top: 7.5rem;
     }
 }
 
@@ -103,6 +103,15 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    a {
+        text-decoration: none;
+        color: $primaryColor;
+    }
+
+    a:hover {
+        opacity: .7;
+    }
 
     &__logo {
         font-family: 'Josefin Sans', sans-serif;
@@ -118,7 +127,7 @@ body {
         justify-content: space-between;
         list-style: none;
         text-transform: uppercase;
-       
+
         font-size: 14px;
         font-weight: 400;
         letter-spacing: 1px;
@@ -127,12 +136,9 @@ body {
             margin-left: 42px;
         }
     }
-
-    &__link {
-        text-decoration: none;
-        color: $primaryColor;
-    }
 }
+
+
 
 .ba-why {
     height: 686px;
@@ -368,14 +374,6 @@ body {
                 margin: 0;
                 text-indent: 20px;
             }
-
-            // &__descr::before{
-            //     display: block;
-            //     font-size: 12px;
-            //     font-family: "FontAwesome";
-            //     content: '\f10d';
-            //     color: #5474fd;
-            // }
         }
     }
 }
@@ -404,7 +402,7 @@ body {
             font-size: 16px;
             font-weight: 400;
             text-align: center;
-
+            margin-bottom: 34px;
 
         }
 
@@ -412,33 +410,17 @@ body {
 
 }
 
+
 .ba-social {
     display: flex;
     justify-content: space-between;
     margin-bottom: 52px;
-}
-.ba-social__items {
-    color: $primaryColor;
-}
-.ba-social__items:hover {
-    color: #5474fd;
-}
 
-// .box {
-//     background-color: #ccc;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     padding: 15px;
-//     height: 100%;
-// }
+    &__items {
+        color: $primaryColor;
+    }
 
-// .btn {
-//     background: $primaryColor;
-//     min-width: 101px;
-//     padding: 0 1em;
-
-//     &:hover {
-//         @include buttonHover;
-//     }
-// }
+    &__items:hover {
+        color: #5474fd;
+    }
+}
